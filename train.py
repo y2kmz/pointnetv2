@@ -275,6 +275,7 @@ def train_one_epoch(sess, ops, train_writer):
         loss_sum = 0
 
         # 在一个epoch 中逐个mini-batch训练直至遍历完一遍训练集。计算总分类正确数total_correct和已遍历样本数
+
         # total_senn，总损失loss_sum.
         for batch_idx in range(num_batches):
             start_idx = batch_idx * BATCH_SIZE
